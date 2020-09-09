@@ -1,0 +1,14 @@
+management.endpoints.web.exposure.include: '*'
+server:
+  address: localhost
+  port: 24245
+spring:
+  profiles:
+    active: git 
+  application:
+    name: config
+  cloud.config.server.git:
+    uri: https://github.com/kese1987/microservices-demo-config
+    username: kese1987
+    password: 125689734jkl
+    clone-on-start: true
