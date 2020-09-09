@@ -15,7 +15,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity(name = "USER")
+@Entity(name = "USERS")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,7 +29,10 @@ public class User extends BaseEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "USER_ID", updatable = false)
-	private String userId;
+	private long id;
+
+	@Column(name = "USERNAME", updatable = false)
+	private String username;
 
 	@Column(name = "EMAIL", nullable = false)
 	private String email;

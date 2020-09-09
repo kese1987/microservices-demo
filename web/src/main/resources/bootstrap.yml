@@ -1,4 +1,4 @@
 spring:
-  application.name: user_service
+  application.name: web_service
   profiles.active: dev
-  cloud.config.uri: http://localhost:24245
+  cloud.config.uri: ${CONFIG_URI:http://localhost:24245}

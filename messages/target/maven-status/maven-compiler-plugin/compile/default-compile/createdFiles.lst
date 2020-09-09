@@ -1,0 +1,10 @@
+org\kese\messages\UserServiceProtos$AddUserReply$Builder.class
+org\kese\messages\UserServiceProtos$AddUserRequest$Builder.class
+org\kese\messages\UserServiceProtos$AddUserRequest.class
+org\kese\messages\UserServiceProtos$AddUserReplyOrBuilder.class
+org\kese\messages\UserServiceProtos$AddUserReply$1.class
+org\kese\messages\UserServiceProtos.class
+org\kese\messages\UserServiceProtos$1.class
+org\kese\messages\UserServiceProtos$AddUserReply.class
+org\kese\messages\UserServiceProtos$AddUserRequest$1.class
+org\kese\messages\UserServiceProtos$AddUserRequestOrBuilder.class

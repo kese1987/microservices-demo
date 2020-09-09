@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "org.kese.messages";
+option java_outer_classname = "UserServiceProtos"; 
+
+message AddUserRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message AddUserReply {
+  int32 errorCode = 1;
+  string message = 2;
+}
