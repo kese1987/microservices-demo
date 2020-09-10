@@ -1,4 +1,4 @@
 spring:
   profiles.active: dev
-  application.name: discovery-service
+  application.name: gateway-service
   cloud.config.uri: ${CONFIG_URI:http://localhost:24245}

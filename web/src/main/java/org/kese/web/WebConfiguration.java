@@ -1,7 +1,6 @@
 package org.kese.web;
 
-import java.util.Collections;
-
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
@@ -16,8 +15,9 @@ public class WebConfiguration {
 	}
 
 	@Bean
+	@LoadBalanced
 	RestTemplate protoBufRestTemplate(ProtobufHttpMessageConverter protoBufConverter) {
-		RestTemplate template = new RestTemplate(Collections.singletonList(protoBufConverter));
+		RestTemplate template = new RestTemplate();
 		template.getMessageConverters().add(protoBufConverter);
 		return template;
 	}

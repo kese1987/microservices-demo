@@ -1,4 +1,4 @@
 spring:
-  application.name: listing_service
   profiles.active: dev
+  application.name: listing-service
   cloud.config.uri: ${CONFIG_URI:http://localhost:24245}
